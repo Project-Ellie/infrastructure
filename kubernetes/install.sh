@@ -22,6 +22,8 @@ rm -rf $HOME/.kube
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+# this should be in ~/.bash_profile, too
 export KUBECONFIG=$HOME/.kube/config
 
 # setup weaveworks networking
