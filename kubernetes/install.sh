@@ -7,7 +7,7 @@ sudo mv -f kubernetes.list /etc/apt/sources.list.d/kubernetes.list
 sudo apt-get update
 sudo apt-get install docker.io kubeadm kubectl kubelet kubernetes-cni
 
-# This reset former 'init' settings
+# This reset former 'init' settings, if there were any
 sudo kubeadm reset
 
 # Initially, the following kubeadm init failed with because swap was on
