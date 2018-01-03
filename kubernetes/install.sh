@@ -29,3 +29,5 @@ export KUBECONFIG=$HOME/.kube/config
 # setup weaveworks networking
 export kubever=$(kubectl version | base64 | tr -d '\n')
 kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$kubever"
+
+watch -n 1 kubectl get pods --all-namespaces
