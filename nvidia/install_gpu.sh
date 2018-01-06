@@ -10,4 +10,5 @@ sudo apt-get install -y nvidia-docker2
 sudo pkill -SIGHUP dockerd
 
 # Test nvidia-smi with the latest official CUDA image
-dockerrun --runtime=nvidia --rm nvidia/cuda:8.0 nvidia-smi
+docker run --runtime=nvidia --rm nvidia/cuda:8.0 nvidia-smi
+
