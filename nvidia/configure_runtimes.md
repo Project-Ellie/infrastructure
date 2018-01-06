@@ -19,4 +19,4 @@ $ sudo systemctl daemon-reload
 $ sudo systemctl restart kubelet
 ```
 
-Then head on to infrastructure/kubernets and run plugin.sh
+Then head on to infrastructure/kubernets and run nvidia-device-plugin.sh
