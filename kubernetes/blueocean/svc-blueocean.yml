@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+ name: blueocean-svc
+ labels:
+  app: blueocean
+spec:
+ type: NodePort
+ ports:
+ - port: 8080
+   nodePort: 31080
+   protocol: TCP
+ selector:
+   app: blueocean
