@@ -20,6 +20,8 @@ spec:
    containers:
    - name: mongo-ctr
      image: bitnami/mongodb:latest
+     # container tries to chown /data/db and fails, thus we override the entrypoint
+     command: ["mongod", "--bind_ip_all"]
      ports:
      - containerPort: 27017
      volumeMounts:

@@ -25,7 +25,7 @@ spec:
      volumeMounts:
      # name must match the volume name below
       - name: blueocean
-        mountPath: "/data/"
+        mountPath: "/var/jenkins_home/"
    volumes:
    - name: blueocean
      persistentVolumeClaim:
