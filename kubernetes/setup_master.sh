@@ -5,5 +5,5 @@ kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/
 # provide it with admin rights. (DON'T USE IN PROD)
 kubectl create -f dashboard-admin.yml
 
-# start the proxy in the background
-nohup kubectl proxy 2>&1 &
+# start the proxy on the client like
+# nohup kubectl proxy

@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
- name: models
+ name: ellie
 spec:
  capacity:
   storage: 1Gi
@@ -9,4 +9,4 @@ spec:
   - ReadWriteMany
  nfs:
   server: 192.168.1.114
-  path: "/shares/Ellie/models"
+  path: "/shares/Ellie/"
